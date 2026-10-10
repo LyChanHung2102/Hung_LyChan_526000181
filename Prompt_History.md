@@ -1,40 +1,43 @@
-Prompt 1: Khởi tạo Bước 1 - Cấu trúc HTML tĩnh
-"Bạn là một Expert Frontend Developer. Nhiệm vụ của bạn là viết BƯỚC 1: Xây dựng toàn bộ mã HTML tĩnh cho một trang Portfolio cá nhân (file index.html).
-YÊU CẦU QUAN TRỌNG:
+Họ và tên: Lý Chấn Hưng
 
-CHỈ VIẾT HTML. KHÔNG viết bất kỳ mã CSS nào (không dùng thẻ <style> hay inline CSS).
-Bắt buộc tuân thủ Semantic HTML5 và cấu trúc cây DOM bên dưới.
-Khai báo đầy đủ CDN của Animate.css và AOS (CSS + JS).
-CẤU TRÚC DOM CHI TIẾT CẦN TẠO: <head>, <header>, <main> (chứa #hero, #about, #skills, #projects), <footer> (#contact), và <script> khởi tạo AOS."
+MSSV: 526000181
 
-Prompt 2: Khởi tạo Bước 2 - Thiết kế giao diện CSS
-"Bây giờ là BƯỚC 2. Hãy đóng vai Expert Frontend Developer và viết file style.css để làm đẹp cho file HTML vừa tạo.
-YÊU CẦU QUAN TRỌNG:
+Tên đề tài Website: Portfolio cá nhân (Giao diện 3D Neon Dark theo phong cách Ladunjexa)
 
-CHỈ VIẾT CODE CSS. Tuyệt đối không sinh thêm mã HTML nào nữa.
-Code CSS phải bám sát 100% vào các class và ID đã tạo ở bước 1.
-YÊU CẦU KỸ THUẬT CHI TIẾT:
-CSS Variables & Reset
-Bố cục Layout (Flexbox & Grid)
-Styling Chi Tiết (UI/UX)
-Hiệu ứng Tương tác (Tự viết bằng CSS: transition, hover, transform)
-Responsive Design cơ bản (@media max-width: 768px)"
+Công cụ AI đã sử dụng: Gemini (hoặc ghi công cụ bạn thực tế đã dùng như ChatGPT, Claude, Cursor...)
+1. Yêu cầu ban đầu (System/Initial Prompt)
+Prompt khởi tạo:
+"Bạn là một Expert Frontend Developer. Nhiệm vụ của bạn là viết BƯỚC 1: Xây dựng toàn bộ mã HTML tĩnh cho một trang Portfolio cá nhân (file index.html). CHỈ VIẾT HTML. KHÔNG viết bất kỳ mã CSS nào. Bắt buộc tuân thủ Semantic HTML5 (, ,  chứa #hero, #about, #skills, #projects,  chứa #contact). Khai báo đầy đủ CDN của Animate.css và AOS."
 
-Prompt 3: Tải lên hình ảnh & Yêu cầu làm theo Layout Ladunjexa Portfolio
-"giúp tôi thiết kế theo layout của Ladunjexa Portfolio nhé"
-(Gửi kèm 01 hình ảnh giao diện mẫu 3D Portfolio tối neon của Ladunjexa)
+2. Quá trình tinh chỉnh & Giải quyết sự cố (Iteration Iterations)
+Lần 1: Dựng khung Semantic HTML, Layout & CSS Variable
+Prompt đã dùng: Khởi tạo Bước 2 (Thiết kế giao diện CSS với Flexbox/Grid, CSS Variables) kết hợp tải lên hình ảnh Layout Ladunjexa Portfolio và yêu cầu tuân thủ bộ tiêu chuẩn Kỹ thuật (Prompt 4).
 
-Prompt 4: Đảm bảo bộ tiêu chuẩn Kỹ thuật cho Ladunjexa Layout
-"1. Chuẩn Semantic HTML5 (Tối thiểu 5 thành phần): <header>, <nav>, <main>, <section> hoặc <article>, <footer>.
-2. Kỹ thuật CSS & CSS Variables (:root { --primary-color: ...; }), Flexbox / CSS Grid responsive.
-3. Tương tác & Hiệu ứng (Animate.css, AOS, hiệu ứng :hover, :focus tự viết bằng CSS)."
+Kết quả AI tạo ra: AI sinh ra được cấu trúc khung khá bám sát bản vẽ, các mảng màu neon tối cơ bản đã hình thành thông qua biến CSS (--primary-color). Các thẻ Semantic (<header>, <nav>, <main>, <section>) được phân bổ đúng chuẩn.
 
-Prompt 5: Yêu cầu chuyên sâu về Mobile Responsive
-"Dựa trên mã HTML và CSS hiện có của trang Portfolio, hãy viết bổ sung riêng phần CSS Mobile Responsive (sử dụng @media queries) để giao diện hiển thị hoàn hảo trên điện thoại.
-YÊU CẦU CHI TIẾT TẠI BREAKPOINT @media (max-width: 768px):
+Nhận xét & Tinh chỉnh của SV: Mặc dù AI tạo layout khá tốt, nhưng việc đổ bóng (box-shadow) và màu sắc neon chưa thực sự giống hình ảnh mẫu của Ladunjexa. Ở các phần nội dung chi tiết, AI đôi khi lạm dụng thẻ <div>. Đã tinh chỉnh bằng cách yêu cầu AI tuân thủ chặt chẽ 5 thành phần Semantic HTML5 và bổ sung các hiệu ứng :hover tự viết để tạo cảm giác 3D nổi bật hơn.
 
-Khung trang & Spacing: Giảm padding tất cả các <section>.
-Header & Navbar: Chuyển thành dạng Hamburger Menu (dùng CSS Checkbox Hack) hoặc cuộn ngang (overflow-x: auto).
-Hero Section: Đổi flex-direction thành column-reverse, căn giữa toàn bộ text, giảm font-size <h1>, ẩn đường kẻ dọc trang trí (.hero-accent).
-Layout dạng Lưới (Grid): Chuyển .skills-container và .projects-grid về 1 cột duy nhất (grid-template-columns: 1fr).
-ĐẦU RA: Chỉ cung cấp đoạn code CSS bổ sung nằm trong block @media (max-width: 768px) { ... }."
+Lần 2: Tích hợp thư viện Animate.css, AOS & Hoàn thiện Mobile Responsive
+Prompt đã dùng: Bổ sung cấu trúc khởi tạo AOS ở Bước 1 và chạy Prompt 5 (Yêu cầu chuyên sâu về Mobile Responsive cho breakpoint @media max-width: 768px).
+
+Thách thức gặp phải:
+
+Khi đưa lên giao diện Mobile, layout dạng lưới của phần Skills và Projects bị chèn ép, chữ quá nhỏ.
+
+Navbar trên thiết bị di động chiếm quá nhiều diện tích và chưa có nút Hamburger.
+
+Hiệu ứng AOS ở phần Hero Section chạy loạn khi thay đổi kích thước màn hình.
+
+Cách sửa prompt (Debug prompt): Sử dụng Prompt 5 với chỉ thị ép buộc rất rõ ràng: "Đổi flex-direction thành column-reverse ở Hero, căn giữa text, giảm font-size. Chuyển .skills-container và .projects-grid về 1 cột duy nhất (grid-template-columns: 1fr). Tạo Hamburger Menu bằng CSS Checkbox Hack. ĐẦU RA: Chỉ cung cấp đoạn code CSS bổ sung nằm trong block @media".
+
+3. Đánh giá cá nhân về quá trình Vibe Coding
+AI đã giúp bạn tiết kiệm thời gian ở phần nào nhất?
+AI giúp tiết kiệm tối đa thời gian ở việc gõ các đoạn mã HTML lặp đi lặp lại (boilerplate) và thiết lập cấu trúc CSS Layout (Grid, Flexbox) cơ bản. Việc tích hợp các link CDN (AOS, Animate.css) và viết các block CSS Variables ban đầu cũng được AI xử lý trong vài giây, giúp mình tập trung hơn vào việc tư duy luồng người dùng và tinh chỉnh thẩm mỹ UI/UX.
+
+Bài học rút ra khi đặt câu hỏi (Prompt) cho AI trong thiết kế web?
+
+Chia để trị (Divide & Conquer): Không nên bắt AI làm cả HTML và CSS cùng lúc. Tách biệt rõ ràng "Chỉ viết HTML tĩnh" ở Bước 1 và "Chỉ viết CSS dựa trên ID/Class đã có" ở Bước 2 giúp code không bị lỗi và dễ kiểm soát.
+
+Ràng buộc kỹ thuật nghiêm ngặt: Cần chỉ định rõ các tiêu chuẩn bắt buộc (như Semantic HTML5, không dùng inline CSS) để đảm bảo bài làm đạt tối đa điểm theo Rubric.
+
+Xử lý Responsive cần cụ thể: Không chỉ nói "hãy làm cho nó responsive", mà phải định hướng rõ cho AI về hành vi UI mong muốn trên mobile (ví dụ: grid 1 cột, menu hamburger, ẩn chi tiết thừa).
