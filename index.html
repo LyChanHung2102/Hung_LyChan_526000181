@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lý Chấn Hưng — Portfolio</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Animate.css CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    <!-- AOS (Animate On Scroll) CSS CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body>
+
+    <!-- Canvas background decoration for abstract waves -->
+    <div class="bg-waves"></div>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">
+                <span class="logo-icon">😊</span>
+                <span class="logo-text">Lý Chấn Hưng — 3D Portfolio</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">Giới thiệu</a></li>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#projects">Dự án</a></li>
+                <li><a href="#contact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- Hero Section (Ladunjexa Style) -->
+        <section id="hero">
+            <div class="hero-container">
+                <!-- Vertical accent bar with glowing circle node -->
+                <div class="hero-accent">
+                    <div class="hero-dot"></div>
+                    <div class="hero-line"></div>
+                </div>
+
+                <!-- Text Header Content -->
+                <div class="hero-content">
+                    <h1 class="animate__animated animate__fadeInDown">
+                        Hi, I'm <span class="text-highlight">Lý Chấn Hưng</span>
+                    </h1>
+                    <p class="subtitle animate__animated animate__fadeInUp">
+                        Software Development | Chuyên xây dựng hệ thống Web Backend &amp; UI/UX
+                    </p>
+                    <a href="#projects" class="btn-cta animate__animated animate__zoomIn animate__delay-1s">
+                        Xem Dự Án
+                    </a>
+                </div>
+            </div>
+
+            <!-- 3D Computer Workstation Display (Visual Element matching Ladunjexa style) -->
+            <div class="hero-computer-display" data-aos="fade-up">
+                <div class="computer-screen">
+                    <div class="screen-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="screen-title">hung_dev.cs — Visual Studio Code</span>
+                    </div>
+                    <div class="screen-body">
+                        <pre><code><span class="code-keyword">public class</span> <span class="code-class">Developer</span> {
+    <span class="code-keyword">public string</span> Name { <span class="code-keyword">get</span>; } = <span class="code-string">"Lý Chấn Hưng"</span>;
+    <span class="code-keyword">public string</span> Role { <span class="code-keyword">get</span>; } = <span class="code-string">"Software Development"</span>;
+    <span class="code-keyword">public string[]</span> Skills { <span class="code-keyword">get</span>; } = { <span class="code-string">"C#"</span>, <span class="code-string">"ASP.NET Core"</span>, <span class="code-string">"Vue.js"</span>, <span class="code-string">"PostgreSQL"</span>, <span class="code-string">"WebGL"</span> };
+    
+    <span class="code-keyword">public void</span> <span class="code-func">BuildAwesomeWebsites</span>() {
+        Console.WriteLine(<span class="code-string">"Turning ideas into interactive 3D realities!"</span>);
+    }
+}</code></pre>
+                    </div>
+                </div>
+                <div class="computer-base"></div>
+                <div class="pc-case">
+                    <div class="fan-rgb"></div>
+                    <div class="fan-rgb"></div>
+                </div>
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator">
+                <a href="#about" aria-label="Scroll down">
+                    <div class="scroll-pill">
+                        <div class="scroll-dot"></div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h2 class="section-title" data-aos="fade-down">Giới thiệu bản thân</h2>
+            <div class="about-content" data-aos="fade-up">
+                <p>Tôi là sinh viên ngành Công Nghệ Thông Tin tại trường Đại Học Lạc Hồng. Tôi đam mê kiến trúc hệ thống, xử lý dữ liệu realtime và luôn thích thú khám phá các công nghệ tương tác mới như 3D WebGL. Từng đảm nhiệm vị trí Trưởng nhóm Dev Intern, tôi quen thuộc với quy trình làm việc nhóm, thiết kế giao diện và tư duy giải quyết vấn đề.</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2 class="section-title" data-aos="fade-down">Kỹ năng chuyên môn</h2>
+            <div class="skills-container">
+                <article class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Backend & Data</h3>
+                    <ul>
+                        <li>C#</li>
+                        <li>ASP.NET Core</li>
+                        <li>PostgreSQL</li>
+                        <li>Supabase</li>
+                    </ul>
+                </article>
+                <article class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>Vue.js</li>
+                        <li>HTML/CSS/JS</li>
+                        <li>Three.js (WebGL)</li>
+                    </ul>
+                </article>
+                <article class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <h3>Design &amp; Tools</h3>
+                    <ul>
+                        <li>Figma (Auto Layout)</li>
+                        <li>Git</li>
+                        <li>Postman</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h2 class="section-title" data-aos="fade-down">Dự án nổi bật</h2>
+            <div class="projects-grid">
+
+                <!-- Project Card 1 -->
+                <article class="project-card" data-aos="zoom-in-up" data-aos-delay="100">
+                    <div class="card-img-placeholder p1"></div>
+                    <div class="card-info">
+                        <h3>Hệ thống Đặt vé Xem phim</h3>
+                        <p class="project-desc">Hệ thống đặt vé xem phim trực tuyến cho phép chọn ghế theo thời gian thực và thanh toán tự động.</p>
+                        <div class="tech-stack">
+                            <span>SignalR</span>
+                            <span>Vue.js</span>
+                            <span>C#</span>
+                            <span>SePay</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="#">Live Demo</a>
+                            <a href="https://github.com/BillHiHi/rapfim">Frontend</a>
+                            <a href="https://github.com/BillHiHi/doantotnghiep-backend">Backend</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 2 -->
+                <article class="project-card" data-aos="zoom-in-up" data-aos-delay="200">
+                    <div class="card-img-placeholder p2"></div>
+                    <div class="card-info">
+                        <h3>ProcureSmart - AI Hackathon</h3>
+                        <p class="project-desc">Hệ thống quản lý yêu cầu mua sắm và đơn đặt hàng ứng dụng AI hỗ trợ tự động hóa quy trình kinh doanh.</p>
+                        <div class="tech-stack">
+                            <span>AI</span>
+                            <span>Vue.js</span>
+                            <span>C#</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="#">Live Demo</a>
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 3 -->
+                <article class="project-card" data-aos="zoom-in-up" data-aos-delay="300">
+                    <div class="card-img-placeholder p3"></div>
+                    <div class="card-info">
+                        <h3>API Theo dõi Dinh dưỡng</h3>
+                        <p class="project-desc">Hệ thống API hỗ trợ tính toán chỉ số Macro và theo dõi chế độ dinh dưỡng hàng ngày.</p>
+                        <div class="tech-stack">
+                            <span>PostgreSQL</span>
+                            <span>C#</span>
+                            <span>Macro Engine</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="#">Live Demo</a>
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Project Card 4 -->
+                <article class="project-card" data-aos="zoom-in-up" data-aos-delay="400">
+                    <div class="card-img-placeholder p4"></div>
+                    <div class="card-info">
+                        <h3>Nựng Mèo 3D WebGL</h3>
+                        <p class="project-desc">Trải nghiệm tương tác mô hình 3D chú mèo trực tiếp trên trình duyệt web.</p>
+                        <div class="tech-stack">
+                            <span>Three.js</span>
+                            <span>WebGL</span>
+                            <span>Tương tác 3D</span>
+                        </div>
+                        <div class="card-links">
+                            <a href="#">Live Demo</a>
+                            <a href="#">GitHub</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contact">
+        <h2 class="section-title" data-aos="fade-down">Liên hệ</h2>
+        <div class="social-links" data-aos="fade-up">
+            <a href="https://github.com/BillHiHi" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">💼 LinkedIn</a>
+            <a href="mailto:hung.lychan@example.com">✉️ Email</a>
+        </div>
+        <p class="copyright">© 2026 Bản quyền thuộc về Lý Chấn Hưng.</p>
+    </footer>
+
+    <!-- AOS JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Initialize AOS -->
+    <script>
+        AOS.init({ duration: 800, once: true });
+    </script>
+</body>
+</html>
